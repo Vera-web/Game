@@ -33,6 +33,13 @@ function startGame() {
 
 start.addEventListener('click', startGame)
 
+inputTime.addEventListener('click', () =>{
+result.classList.add('hide')
+resultH1.classList.add('hide')
+timeH1.classList.remove('hide')
+time.classList.remove('hide')
+})
+
 function endGame() {
     isGameActive = false;
     game.innerHTML = "";
